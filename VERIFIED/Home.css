@@ -198,14 +198,15 @@ footer{
     text-align: center;
     color: white;
     font-size: 45px;
+    font-weight: 100;
 }
 .social_handles{
     display: flex;
     align-items: flex-start;
-    width: 50%;
+    width: 40%;
     justify-content: space-around;
     margin: 0 auto;
-    margin-top: 20px;
+    margin-top: 15px;
 }
 .fa{
     color: white;
