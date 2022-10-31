@@ -187,7 +187,7 @@ header{
 /* Best Dressed For The Week */
 .special{
     width: 96%;
-    height: 90vh;
+    height: 100vw;
     max-height: 90vh;
     background-image: url(./Images/Special.jpg);
     background-position: top;
