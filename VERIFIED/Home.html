@@ -1,0 +1,152 @@
+<!-- ?php
+
+    session_start();
+    
+        include("Connection.php");
+        include("functions.php");
+    
+        $user_data = check_login($con);
+    
+    ?-->
+    
+    <!DOCTYPE html>
+    <html lang="en" dir="ltr">
+        <head>
+            <meta charset="=UTF-8">
+            <title>VERIFIED</title>
+            <link rel="stylesheet" href="Home.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="icon" href="http://127.0.0.1:3000/c:/xampp/htdocs/Simple Login Page/ALL/Images/Icon.png">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta charset="UTF-8">
+        </head>
+        <body>
+            <!-- Navbar-->
+            <div class="navbar-container">
+                <nav class="navbar">
+                    <img src="./Images/Icon.jpg" alt="" class="icon">
+                    <h1 class="name">VERIFIED</h1>
+                    <ul class="nav-links">
+                        <li class="active"><a href="#"></a>Home</li>
+                        <li><a href="#"></a>Explore</li>
+                        <li><a href="#"></a>School</li>
+                        <li><a href="#"></a>About</li>
+                        <li class="ctn"><a href="#"></a>Contact</li>
+                    </ul>
+                    <img src="./Images/Menu_Button.png" alt="" class="menu-btn">
+                </nav> 
+            </div>
+            <header>
+                <div class="header-content">
+                    <h2>Explore the colorful world</h2>
+                    <div class="line"></div>
+                    <h1>The Brick City</h1>
+                    <div class="signup-button"><a href="http://127.0.0.1/Simple%20Login%20Page/ALL/Signup_Page.php" class="ctn">Signup</a></div>
+                </div>
+            </header>
+            <div class="title">
+                <h1>Latest Magazines</h1>
+                <div class="line"></div>
+            </div>
+            <div class="magz">
+                <br>
+                <div class="row">
+                    <div class="row2">
+                        <div class="col">
+                            <div class="img"><img src="./Images/Mag 16-10-22.jpg" alt="">
+                                <div class="col">
+                                    <h4>16/10/22</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="img"><img src="./Images/Mag 17-10-22.jpg" alt="">
+                                <div class="col">
+                                    <h4>17/10/22</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row2">
+                        <div class="col">
+                            <div class="img"><img src="./Images/Mag 16-10-22.jpg" alt="">
+                                <div class="col">
+                                    <h4>18/10/22</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="img"><img src="./Images/Mag 17-10-22.jpg" alt="">
+                                <div class="col">
+                                    <h4>19/10/22</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row hidden">
+                    <div class="row2">
+                        <div class="col">
+                            <div class="img"><img src="./Images/Mag 16-10-22.jpg" alt="">
+                                <div class="col">
+                                    <h4>20/10/22</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="img"><img src="./Images/Mag 17-10-22.jpg" alt="">
+                                <div class="col">
+                                    <h4>21/10/22</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row2">
+                        <div class="col">
+                            <div class="img"><img src="./Images/Mag 16-10-22.jpg" alt="">
+                                <div class="col">
+                                    <h4>22/10/22</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="img"><img src="./Images/Mag 17-10-22.jpg" alt="">
+                                <div class="col">
+                                    <h4>23/10/22</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="more-magz">
+                    <div class="more-magz-button"><a href="#" class="ctn"><b>View More</b></a></div>
+                </div>
+            </div>
+            <div class="special">
+
+            </div>
+            <div style="height: 100px; background-color: #f3f3f3; margin-top: 6px;"></div>
+            <footer>
+                <div class=""><h2 class="footername">VERIFIED</h2></div>
+                <div class="social_handles">
+                    <a href="https://www.facebook.com/profile.php?id=100086989556405" class="fa fa-facebook"></a>
+                    <a href="https://www.instagram.com/verifiedmagz" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-whatsapp"></a>
+                    <a href="https://twitter.com/brickcity_gist" class="fa fa-twitter"></a>
+                </div>
+            </footer>
+            <script>
+                const menuBtn = document.querySelector('.menu-btn')
+                const navlinks = document.querySelector('.nav-links')
+    
+                menuBtn.addEventListener('click',()=>{
+                    navlinks.classList.toggle('mobile-menu')
+                })
+            </script>  
+        </body>
+    </html>
+    <!-- Hello ?php echo $user_data['First_Name'];?> &#44;&nbsp; ?php echo $user_data['Last_Name'];?> -->
+    <!-- <form action="Logout.php" method="post">
+                <input type="submit" value="Logout">
+            </form> -->
