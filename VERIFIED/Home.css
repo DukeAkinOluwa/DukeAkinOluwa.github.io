@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    max-width: 100%;
+    background-color: #f3f3f3;
+}
+body, html{
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.active{
+    color: #87C232;
+    text-decoration: underline;
+    font-weight: bold;
+}
+/* Navbar */
+.navbar-container{
+    background-color: #f3f3f3;
+    height: 70px;
+    align-items: center;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 10px;
+}
+.icon{
+    position: absolute;
+    top: 5.7px;
+    left: 10px;
+    height: 60px;
+}
+.name{
+    position: absolute;
+    top: 23.4px;
+    left: 80px;
+}
+.navbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    color: black;
+}
+.nav-links{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    z-index: 1000;
+}
+.nav-links li{
+    margin: 0 20px;
+}
+.menu-btn{
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    width: 40px;
+    cursor: pointer;
+    display: none;
+}
+/* Header */
+header{
+    width: 100vw;
+    height: 100vw;
+    background-image: url('./Images/Header_Background4.jpg');
+    max-height: 80vmin;
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    border-bottom-right-radius: 10px;
+}
+.header-content{
+    margin-bottom: 170px;
+    color: whitesmoke;
+    text-align: center;
+}
+.header-content h2{
+    font-size: 16px;
+}
+.line{
+    width: 80px;
+    height: 4px;
+    background: #87C232;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+}
+.header-content h1{
+    margin-bottom: 30px;
+    font-size: 50px;
+}
+.ctn{
+    padding: 8px 15px;
+    background: #87C232;
+    border-radius: 30px;
+    color: whitesmoke;
+}
+/*Magz */
+.title{
+    text-align: center;
+    font-size: 4vmin;
+    color: #172c31;
+    margin-top: 20px;
+}
+.magz{
+    justify-content: center;
+    position: relative;
+}
+.row{
+    display: flex;
+    align-items: flex-start;
+    width: 90%;
+    justify-content: space-around;
+    text-justify: auto;
+    text-align: justify;
+    margin: 0 auto;
+}
+.row2{
+    display: flex;
+}
+.row .col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.row2 .col{
+    margin-top: 8%;
+}
+.magz .nextline{
+    display: flex;
+}
+.row .col .img {
+    width: 90%;
+    background-color: #cdcfce;
+    box-shadow: 5px 5px 7px;
+    vertical-align: middle;
+}
+.magz img{
+    display: flex;
+    justify-content: center;
+    width: 94%;
+    margin-top: 3%;
+    margin-left: 3%;
+}
+.row .col h4{
+    font-size: 3vmin;
+    margin: 4% auto;
+}
+.more-magz{
+    display: flex;
+    margin-left: 6%;
+    background-color: #5b721d;
+    width: 88%;
+    height: 90px;
+    position: absolute;
+    bottom: 0;
+}
+.more-magz .more-magz-button{
+    display: flex;
+    margin: auto;
+    margin-bottom: 7%;
+    opacity: 1;
+}
+.more-magz .ctn{
+    color: #87C232;
+    background-color: white;
+    margin-bottom: 0px;
+}
+/* Best Dressed For The Week */
+.special{
+    width: 86vw;
+    height: 60vw;
+    background-image: url('./Images/Special.jpg');
+    max-height: 60vmin;
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    align-items: flex-end;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 4px 4px 12px #17440e;
+}
+
+
+
+/* Footer */
+footer{
+    background-color: #474a4f;
+    /* Change height to auto
+    height: auto; */
+    height: 400px;
+    margin-top: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.footername{
+    padding-top: 30px;
+    text-align: center;
+    color: white;
+    font-size: 45px;
+    font-weight: 100;
+}
+.social_handles{
+    display: flex;
+    align-items: flex-start;
+    width: 40%;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+.fa{
+    color: white;
+}
+
+
+
+/* Mobile device */
+@media only screen and (max-width:650px){
+    .navbar{
+        padding: 0;
+    }
+    .navbar-container{
+        background-color: #f3f3f3;
+        height: 65px;
+        align-items: center;
+        top: 0;
+    }
+    .icon{
+        position: absolute;
+        top: 12.4px;
+        left: 10px;
+        height: 40px;
+    }
+    .name{
+        position: absolute;
+        top: 18px;
+        left: 55px;
+    }
+    .nav-links{
+        display: inline-flex;
+        top: 0;
+        position: fixed;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        color: white;
+        background: #AA4A44;
+        margin-top: -900px;
+        transition: all 1s ease;
+        border-bottom-left-radius: 30%;
+    }
+    .menu-btn{
+        position: absolute;
+        top: 17.6px;
+        right: 10px;
+        height: 26px;
+        width: 34px;
+        cursor: pointer;
+        display: block;
+    }
+    .mobile-menu{
+        margin-top: 0px;
+    }
+    .nav-links li{
+        margin: 30px auto;
+    }
+    header{
+        width: 100%;
+        height: 400px;
+    }
+    .header-content{
+        margin-bottom: calc(100% / 4);
+        color: whitesmoke;
+        text-align: center;
+    }
+    .navbar{
+        z-index: 100;
+    }
+    .menu-btn{
+        z-index: 1000;
+    }
+    .magz .hidden{
+        display: none;
+    }
+    .magz{
+        z-index: -1;
+    }
+    .row2{
+        display: inline;
+    }
+    .row2 .col{
+        margin-top: 8%;
+    }
+    .row .col h4{
+        font-size: 4vmin;
+        margin: 4% auto;
+    }
+}
