@@ -183,6 +183,25 @@ header{
     background-color: white;
     margin-bottom: 0px;
 }
+
+/* Special */
+.special{
+    width: 86vw;
+    height: 60vw;
+    background-image: url('./Images/Special.jpg');
+    max-height: 60vmin;
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    align-items: flex-end;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 4px 4px 12px #17440e;
+}
+
 /* Footer */
 footer{
     background-color: #474a4f;
